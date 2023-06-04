@@ -1,0 +1,26 @@
+@import "variables";
+
+:host {
+  width: 100%;
+  border-radius: 5px;
+  background: linear-gradient($violet-15, $colorPrimary-50, $colorPrimary-50), linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)), url("https://oir.mobi/uploads/posts/2021-03/thumbs/1616587100_6-p-programmirovanie-fon-7.jpg");
+  background-size: cover, cover;
+}
+
+.skills-container {
+  width: 100%;
+  margin-top: 70px;
+  margin-bottom: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+
+.grid-skills {
+  margin-top: 2rem;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 1rem;
+}

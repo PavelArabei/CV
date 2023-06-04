@@ -1,0 +1,29 @@
+.primary-color {
+  color: $colorPrimary;
+}
+
+.secondary-color {
+  color: $violet;
+}
+
+
+.fz-24, .fz-subtitle, .fz-text, .fz-title {
+  line-height: initial;
+
+}
+
+.fz-24 {
+  font-size: 32px;
+}
+
+.fz-text {
+  font-size: 20px;
+}
+
+.fz-title {
+  font-size: 72px;
+}
+
+.fz-subtitle {
+  font-size: 36px;
+}

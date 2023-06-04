@@ -1,0 +1,97 @@
+@import "variables";
+
+:host {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.img-wrapper {
+  width: 230px;
+  height: 230px;
+  border: 5px solid #515151;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+
+  .me-img {
+    height: auto;
+    width: 100%;
+    margin-top: 20px;
+    transform: scale(1.1);
+  }
+}
+
+.me-subtitle {
+  margin-top: 1rem;
+
+}
+
+.me-title {
+  margin-top: 2rem;
+
+}
+
+.sv-button {
+  position: relative;
+  margin-top: 1rem;
+  width: 300px;
+  height: 50px;
+  background-color: transparent;
+  border: 1px solid $colorPrimary;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+
+  &::before {
+    transition: all 1s;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    content: '';
+    width: 300px;
+    height: 50px;
+    background-color: $colorPrimary;
+
+    opacity: 0.2;
+  }
+
+  &:hover::before {
+    left: 0;
+  }
+
+  &__text {
+    position: relative;
+    z-index: 0;
+  }
+}
+
+.about-me-container {
+  margin-top: 2rem;
+  margin-left: 50px;
+  width: 80%;
+  text-align: start;
+
+}
+
+.about-me-text {
+  padding-left: 18px;
+  text-indent: -18px;
+}
+
+
+.sv-button:active {
+  transform: scale(0.9);
+  //background-color: $colorPrimary;
+  opacity: 0.9;
+}
+

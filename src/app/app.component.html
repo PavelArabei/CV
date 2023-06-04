@@ -1,0 +1,22 @@
+<mat-drawer-container class="drawer" autosize>
+  <mat-drawer
+    [ngClass]="{'bgLightSecondary':!isDarkTheme,'bgDarkSecondary':isDarkTheme}"
+    #drawer class="drawer__sidenav" mode="side">
+    <app-menu [drawer]="drawer" [isNav]="true"></app-menu>
+    <app-nav></app-nav>
+  </mat-drawer>
+
+  <div
+    class="drawer__sidenav-content"
+    [ngClass]="{'bgLight':!isDarkTheme,'bgDark':isDarkTheme}"
+  >
+    <app-header [drawer]="drawer"></app-header>
+    <app-main class="container"></app-main>
+    <button mat-raised-button color="primary"></button>
+    <button mat-raised-button color="accent"></button>
+    <button mat-raised-button color="warn"></button>
+
+    <app-footer></app-footer>
+  </div>
+
+</mat-drawer-container>

@@ -1,0 +1,21 @@
+.drawer {
+  width: 100%;
+  min-height: 100vh;
+  font-family: 'Play', sans-serif;
+
+  &__sidenav-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__sidenav {
+    height: 100vh;
+    position: fixed;
+    padding: 20px;
+  }
+
+}
+

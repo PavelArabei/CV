@@ -1,0 +1,6 @@
+<div class="container header__nav">
+  <div></div>
+  <app-nav *ngIf="!isSmall" [isNav]="false"></app-nav>
+  <app-menu *ngIf="isSmall" [drawer]="drawer" [isNav]="false"></app-menu>
+</div>
+

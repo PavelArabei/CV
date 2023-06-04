@@ -1,0 +1,81 @@
+@import "variables";
+@import "help-classes";
+
+@import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
+
+//$indigo-palette: (
+//  50: #F3E5F5,
+//  100: #E1BEE7,
+//  200: #CE93D8,
+//  300: #BA68C8,
+//  400: #AB47BC,
+//  500: #9C27B0,
+//  600: #8E24AA,
+//  700: #7B1FA2,
+//  800: #6A1B9A,
+//  900: #4A148C,
+//  A100: #EA80FC,
+//  A200: #E040FB,
+//  A400: #D500F9,
+//  A700: #AA00FF,
+//  contrast: (
+//    50: rgba(black, 0.87),
+//    100: rgba(black, 0.87),
+//    200: rgba(black, 0.87),
+//    300: rgba(black, 0.87),
+//    400: rgba(black, 0.87),
+//    500: rgba(black, 0.87),
+//    600: rgba(black, 0.87),
+//    700: rgba(black, 0.87),
+//    800: rgba(black, 0.87),
+//    900: rgba(black, 0.87),
+//  )
+//);
+
+@import "app/scss/theme";
+//
+//
+//@include mat.all-component-themes($my-light-theme);
+//@include mat.all-component-themes($my-dark-theme);
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  //font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+
+}
+
+.container {
+  width: 83%;
+}
+
+.margin-left {
+  margin-left: 70px;
+}
+
+@media (max-width: 1430px) {
+  //.container {
+  //  width: 95%;
+  //}
+}
+
+.bgLight {
+  background-color: $bgLight !important;
+}
+
+.bgDark {
+  background-color: $bgDark !important;
+}
+
+.bgLightSecondary {
+  background-color: $bgLightSecondary !important;
+
+}
+
+.bgDarkSecondary {
+  background-color: $bgDarkSecondary !important;
+}

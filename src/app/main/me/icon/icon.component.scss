@@ -1,0 +1,183 @@
+@import "variables";
+
+:host {
+  position: absolute;
+  left: 0;
+}
+
+.ico-container {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  animation: float 2s ease-in-out infinite;
+
+  &:hover {
+    .icon {
+      animation: float 0.5s ease-in-out infinite;
+    }
+
+
+    .octagon {
+      width: 75px;
+      height: 75px;
+      top: -12.5px;
+      left: -12.5px;
+      animation: rotate 3s linear infinite;
+    }
+
+  }
+}
+
+
+.icon {
+  display: block;
+  position: relative;
+  width: 28px;
+  height: 28px;
+  background-image: url('/assets/icons/github/github-mark-white.svg');
+  background-size: cover;
+  animation: float 3s ease-in-out infinite;
+  top: 14px;
+  left: 11px;
+  z-index: 2;
+}
+
+
+.octagon {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  transform: rotate(22.5deg);
+  animation: rotate 6s linear infinite;
+  transition: 0.5s;
+  top: 0;
+  left: 0;
+  z-index: -2;
+  opacity: 0.4;
+}
+
+.octagon::before,
+.octagon::after {
+
+
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: $violet;
+  z-index: -4;
+  border-radius: 5px;
+}
+
+.octagon::before {
+  transform: rotate(22.5deg);
+}
+
+.octagon::after {
+  transform: rotate(-22.5deg);
+}
+
+@keyframes rotate {
+
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes move {
+  0% {
+    top: inherit;
+
+  }
+  50% {
+    top: inherit -10px;
+
+  }
+  100% {
+    top: inherit;
+
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(0, -10px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.3);
+  }
+}
+
+
+.git {
+  .octagon::before,
+  .octagon::after {
+    background-color: $violet;
+  }
+
+  .icon {
+    background-image: url('/assets/icons/github/github-mark-white.svg');
+    background-color: rgba(10, 9, 9, 0.55);
+    border-radius: 20px;
+
+  }
+
+
+  top: 4vh;
+  left: 56vw;
+
+}
+
+.linked {
+  .octagon::before,
+  .octagon::after {
+    background-color: $blue;
+  }
+
+
+  animation-delay: 0.6s;
+  animation-duration: 2.5s;
+
+  .icon {
+    background-image: url('/assets/icons/linckedIn/icons8-линкедин.svg');
+  }
+
+  top: 25vh;
+  left: 21vw;
+
+}
+
+
+.mail {
+  .octagon::before,
+  .octagon::after {
+    background-color: $white-grey;
+  }
+
+  .icon {
+    background-image: url('/assets/icons/gmail/icons8-gmail (1).svg');
+  }
+
+  top: 36vh;
+  left: 62vw;
+  animation-delay: 1.4s;
+  animation-duration: 2.5s;
+}
+
