@@ -1,0 +1,19 @@
+<div [ngClass]="{'justify-start':even}" [rightDirection]="even" appScrollAnimation class="main-container app-child">
+  <div class="project-container">
+    <div class="img-container">
+      <img class="img" [src]="project.imgPath">
+    </div>
+    <div [ngClass]="{'other-side':even}" class="project-sub-container">
+      <div class="project">
+        <p class="project__languages fz-text primary-color"><strong>{{project.writeLanguages}}</strong></p>
+        <p class="project__name fz-subtitle">{{project.projectName}}</p>
+        <p class="project__description fz-text">{{project.description}}</p>
+        <a>
+          <button (click)="navigateToExternalSite()" class="project__button"><span class="fz-text project__button-text">See project</span>
+          </button>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+

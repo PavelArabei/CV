@@ -1,3 +1,17 @@
 :host {
   width: 100%;
 }
+
+.projectsContainer {
+  width: 100%;
+}
+
+.m-top {
+  margin-top: 3rem;
+}
+
+@media (max-width: 900px) {
+  .m-top {
+    margin-top: 1rem;
+  }
+}

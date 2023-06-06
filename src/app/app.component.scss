@@ -2,8 +2,11 @@
   width: 100%;
   min-height: 100vh;
   font-family: 'Play', sans-serif;
+  overflow: hidden;
+
 
   &__sidenav-content {
+    position: relative;
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -15,7 +18,10 @@
     height: 100vh;
     position: fixed;
     padding: 20px;
+    width: 100vw;
   }
 
 }
+
+
 

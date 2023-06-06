@@ -1,0 +1,14 @@
+<div class="experience-container">
+  <div class="work">
+    <div class="romb small-screen"></div>
+    <p class="fz-text work__date">{{work.date}}</p>
+    <div class="romb big-screen"></div>
+    <p class="fz-text"><em>{{work.company}}</em></p>
+  </div>
+  <div class="experience">
+    <p class="fz-subtitle">{{work.jobTitle}}</p>
+    <p *ngFor="let decription of work.whatIDo">
+      <span class="primary-color">></span> {{decription}}
+    </p>
+  </div>
+</div>

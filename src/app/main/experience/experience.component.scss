@@ -1,0 +1,14 @@
+:host {
+  width: 100%;
+}
+
+.exp-container {
+  margin-top: 1.5rem;
+}
+
+
+@media (max-width: 600px) {
+  .exp-container {
+    margin-top: 0.5rem;
+  }
+}

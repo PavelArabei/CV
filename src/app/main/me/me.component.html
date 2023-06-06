@@ -1,11 +1,15 @@
-<app-icon name="git" link="https://github.com/"></app-icon>
-<app-icon name="linked" link="https://github.com/"></app-icon>
-<app-icon name="mail" link="https://github.com/"></app-icon>
+<app-icon *ngIf="!smallScreen" [smallScreen]="smallScreen" name="git" [link]="social.gitHub"></app-icon>
+<app-icon *ngIf="!smallScreen" [smallScreen]="smallScreen" name="linked" [link]="social.linkedIn"></app-icon>
+<app-icon *ngIf="!smallScreen" [smallScreen]="smallScreen" name="mail" [link]="social.mail"></app-icon>
 <div class="img-wrapper"><img class="me-img" src="./assets/images/me.jpg"></div>
 <p class="fz-24 me-subtitle">Hi, I'm <span class="primary-color">Pavel</span>:)</p>
 <p class="fz-title me-title">Front-End Developer</p>
 <div class="sv-button"><span class="fz-text sv-button__text ">Download CV</span></div>
-
+<div class="ico-container" *ngIf="smallScreen">
+  <app-icon [smallScreen]="smallScreen" name="git" [link]="social.gitHub"></app-icon>
+  <app-icon [smallScreen]="smallScreen" name="linked" [link]="social.linkedIn"></app-icon>
+  <app-icon [smallScreen]="smallScreen" name="mail" [link]="social.mail"></app-icon>
+</div>
 <div class="fz-text about-me-container">
   <p class="about-me-text">
     <span class="primary-color"><</span>

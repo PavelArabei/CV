@@ -1,0 +1,20 @@
+@import "variables";
+
+.language {
+  margin-top: 1rem;
+  line-height: 1rem;
+}
+
+.logo {
+  width: 40px;
+  height: 10px;
+  background-color: $colorPrimary;
+}
+
+
+@media (max-width: 800px) {
+
+  .language-container {
+    margin-top: 1rem;
+  }
+}

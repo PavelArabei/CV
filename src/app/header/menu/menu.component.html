@@ -1,4 +1,4 @@
-<button mat-icon-button type="button" (click)="drawer.toggle()">
+<button class="menu-button" mat-icon-button type="button" (click)="drawer.toggle()">
   <mat-icon *ngIf="!isNav; else OpenNav">menu</mat-icon>
   <ng-template #OpenNav>
     <mat-icon>close</mat-icon>

@@ -1,0 +1,26 @@
+@import "variables";
+
+:host {
+  width: 100%;
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+}
+
+
+.footer {
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 4rem;
+
+  & a {
+    color: $bgLight;
+    transition: 0.3s ease-in-out;
+    font-weight: bold;
+    letter-spacing: 0.05rem;
+
+    &:hover {
+      color: $colorPrimary;
+    }
+  }
+}

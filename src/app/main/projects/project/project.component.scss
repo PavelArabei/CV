@@ -1,0 +1,172 @@
+@import "variables";
+
+:host {
+  width: 100%;
+}
+
+.main-container {
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: end;
+  transform: translateX(-150%);
+  transition: transform 0.5s ease;
+}
+
+.project-container {
+  width: 90%;
+  height: 450px;
+  position: relative;
+}
+
+.img-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+
+  .img {
+    position: absolute;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.project-sub-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  border-radius: 10px;
+  //!!!!!!!!!!!!!!!
+  justify-content: end;
+  //!!!!!!!!!!!!!!!
+
+  z-index: 1;
+  background-color: $violet-2;
+}
+
+.project {
+  width: 70%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  margin: 3rem 3rem;
+  //!!!!!!!!!!!!!!!
+  align-items: end;
+  //!!!!!!!!!!!!!!!
+
+  justify-content: end;
+
+
+  &__languages {
+  }
+
+  &__name {
+  }
+
+  &__description {
+
+  }
+
+  &__button {
+    position: relative;
+    overflow: hidden;
+    width: 250px;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    background-color: $colorPrimary;
+    cursor: pointer;
+  }
+
+  &__button-text {
+    position: relative;
+    z-index: 1;
+    color: $bgLight;
+  }
+
+  &__button::before {
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 0;
+    border: none;
+    background-color: $violet-3;
+    transition: 0.5s ease-in-out;
+    z-index: 0;
+  }
+
+  &__button::after {
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 0;
+    top: 50%;
+    left: 100%;
+    border-radius: 0;
+    border: none;
+    background-color: $violet-3;
+    transition: 0.5s ease-in-out;
+    z-index: 0;
+  }
+
+  &__button:hover {
+    &::before {
+      width: 50%;
+      height: 100%;
+      left: 50%;
+      top: 0;
+    }
+
+    &::after {
+      width: 50%;
+      height: 100%;
+      left: 0;
+      top: 0;
+    }
+  }
+
+}
+
+
+.other-side {
+  justify-content: start;
+
+  .project {
+    align-items: start;
+  }
+}
+
+.justify-start {
+  justify-content: start;
+}
+
+
+@media (max-width: 600px) {
+  .project-container {
+    width: 100%;
+
+  }
+  .project {
+    width: 100%;
+    height: 70%;
+    margin: 7rem 2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .project {
+    width: 100%;
+    margin: 7rem 1rem;
+  }
+}
+

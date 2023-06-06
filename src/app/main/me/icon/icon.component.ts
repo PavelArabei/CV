@@ -8,4 +8,5 @@ import {Component, Input} from '@angular/core';
 export class IconComponent {
   @Input() name!: string;
   @Input() link!: string;
+  @Input() smallScreen!: boolean
 }

@@ -1,0 +1,13 @@
+<div class="nav-container" (click)="closeNav()">
+  <button class="menu-button" mat-icon-button type="button">
+    <mat-icon>close</mat-icon>
+  </button>
+  <nav class="side-nav">
+    <ul [@slideAnimation]="animationState" class="list">
+      <li [class.opacity]="animationState==='void'" class="list__item" *ngFor="let item of items ; let i = index"
+      >
+        <a [href]="item.href" class="underline-animation" (click)="scrollToSkills($event)">{{item.name}}</a>
+      </li>
+    </ul>
+  </nav>
+</div>

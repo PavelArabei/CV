@@ -1,1 +1,13 @@
-<div class="margin-left">asdasdasd</div>
+<div class="margin-left">
+  <p class="fz-text primary-color">What I do</p>
+  <p class="fz-subtitle">Recent projects</p>
+  <div class="projectsContainer">
+    <div class="m-top" *ngFor="let project of projects; index as i"
+    >
+      <app-project class="app-child"
+                   [project]="project"
+                   [i]="i">
+      </app-project>
+    </div>
+  </div>
+</div>

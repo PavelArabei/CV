@@ -1,0 +1,41 @@
+:host {
+  width: 100%;
+}
+
+.languages-container {
+  margin-top: 2rem;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  //gap: 2rem;
+  justify-content: space-between;
+
+  & * {
+    width: 25%;
+  }
+}
+
+@media (max-width: 800px) {
+  .languages-container {
+    justify-content: center;
+    margin-top: 0.5rem;
+
+    & * {
+      width: 50%;
+    }
+
+  }
+
+}
+
+//@media (max-width: 330px) {
+//  .languages-container {
+//    gap: 1rem;
+//
+//    & * {
+//      width: 100%;
+//    }
+//
+//  }
+//
+//}

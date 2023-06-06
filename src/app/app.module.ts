@@ -16,6 +16,15 @@ import { MeComponent } from './main/me/me.component';
 import { IconComponent } from './main/me/icon/icon.component';
 import { SkillsComponent } from './main/skills/skills.component';
 import { ProjectsComponent } from './main/projects/projects.component';
+import { ProjectComponent } from './main/projects/project/project.component';
+import { ScrollAnimationDirective } from './derectives/scroll-animation.directive';
+import { EducationComponent } from './main/education/education.component';
+import { CourseComponent } from './main/education/course/course.component';
+import { LanguagesComponent } from './main/languages/languages.component';
+import { LanguageComponent } from './main/languages/language/language.component';
+import { SideNavComponent } from './header/side-nav/side-nav.component';
+import { ExperienceComponent } from './main/experience/experience.component';
+import { CurrentExperienceComponent } from './main/experience/current-experience/current-experience.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +37,16 @@ import { ProjectsComponent } from './main/projects/projects.component';
     MeComponent,
     IconComponent,
     SkillsComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    ProjectComponent,
+    ScrollAnimationDirective,
+    EducationComponent,
+    CourseComponent,
+    LanguagesComponent,
+    LanguageComponent,
+    SideNavComponent,
+    ExperienceComponent,
+    CurrentExperienceComponent
   ],
   imports: [
     BrowserModule,

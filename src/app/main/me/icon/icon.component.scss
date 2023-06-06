@@ -1,7 +1,6 @@
 @import "variables";
 
 :host {
-  position: absolute;
   left: 0;
 }
 
@@ -181,3 +180,28 @@
   animation-duration: 2.5s;
 }
 
+@media (max-width: 1120px) {
+  .git {
+    top: 4vh;
+    left: 70vw;
+  }
+
+  .linked {
+    top: 25vh;
+    left: 18vw;
+  }
+
+
+  .mail {
+    top: 36vh;
+    left: 73vw;
+  }
+}
+
+
+.smallwidth {
+  top: 0;
+  left: 0;
+  position: relative;
+
+}

@@ -27,3 +27,41 @@
 .fz-subtitle {
   font-size: 36px;
 }
+
+
+@media (max-width: 900px) {
+  .fz-title {
+    font-size: 60px;
+  }
+  .fz-text {
+    font-size: 18px;
+  }
+  .fz-subtitle {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 720px) {
+  .fz-title {
+    font-size: 48px;
+  }
+  .fz-text {
+    font-size: 16px;
+  }
+}
+
+
+@media (max-width: 500px) {
+  .fz-title {
+    font-size: 36px;
+  }
+  .fz-subtitle {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 400px) {
+  //.fz-title {
+  //  font-size: 48px;
+  //}
+}
