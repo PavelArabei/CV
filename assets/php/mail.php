@@ -1,8 +1,8 @@
 <?php
 // Файлы phpmailer
-require 'phpmailer/PHPMailer.php';
-require 'phpmailer/SMTP.php';
-require 'phpmailer/Exception.php';
+require 'phpMailer/PHPMailer.php';
+require 'phpMailer/SMTP.php';
+require 'phpMailer/Exception.php';
 
 $title = "Тема письма";
 $file = $_FILES['file'];
