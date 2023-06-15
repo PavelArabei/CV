@@ -1,10 +1,13 @@
-<app-icon *ngIf="!smallScreen" [smallScreen]="smallScreen" name="git" [link]="social.gitHub"></app-icon>
+<app-icon *ngIf="!smallScreen" [smallScreen]="smallScreen" name="git"
+          [link]="social.gitHub"></app-icon>
 <app-icon *ngIf="!smallScreen" [smallScreen]="smallScreen" name="linked" [link]="social.linkedIn"></app-icon>
-<app-icon *ngIf="!smallScreen" [smallScreen]="smallScreen" name="mail" [link]="social.mail"></app-icon>
-<div class="img-wrapper"><img class="me-img" src="./assets/images/me.jpg"></div>
+<app-icon iconName="ptashkaaaaaa@gmail.com" *ngIf="!smallScreen" [smallScreen]="smallScreen" name="mail"
+          [link]="social.mail"></app-icon>
+<div class="img-wrapper"><img class="me-img" alt="my-photo" src="./assets/images/me.jpg"></div>
 <p class="fz-24 me-subtitle">Hi, I'm <span class="primary-color">Pavel</span>:)</p>
 <p class="fz-title me-title">Front-End Developer</p>
-<div class="sv-button"><span class="fz-text sv-button__text ">Download CV</span></div>
+<a href="https://drive.google.com/file/d/1PJOwLt9nIB7r5HwDIVtos4YQtXYypItE/view" download class="sv-button"><span
+  class="fz-text sv-button__text ">Download CV</span></a>
 <div class="ico-container" *ngIf="smallScreen">
   <app-icon [smallScreen]="smallScreen" name="git" [link]="social.gitHub"></app-icon>
   <app-icon [smallScreen]="smallScreen" name="linked" [link]="social.linkedIn"></app-icon>
@@ -30,6 +33,12 @@
     <span class="primary-color"><</span>
     I am looking forward to working in team. I am not only willing to deepen my knowledge but I also want to apply them
     to the real products.
+    <span class="primary-color">/></span>
+  </p>
+  <p class="about-me-text">
+    <span class="primary-color"><</span>
+    I am ready to embrace new challenges in web development, constantly striving to evolve and apply my skills to create
+    high-quality web applications.
     <span class="primary-color">/></span>
   </p>
 </div>

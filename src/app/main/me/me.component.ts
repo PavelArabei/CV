@@ -14,6 +14,7 @@ export class MeComponent implements OnInit {
   social = social
   smallScreen = false
 
+
   @HostListener('window:resize')
   onResize() {
     if (window.innerWidth <= 600 && !this.smallScreen) this.smallScreen = true

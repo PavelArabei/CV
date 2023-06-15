@@ -1,5 +1,6 @@
 @import "variables";
 
+
 :host {
   left: 0;
 }
@@ -132,10 +133,9 @@
   }
 
   .icon {
-    background-image: url('/assets/icons/github/github-mark-white.svg');
-    background-color: rgba(10, 9, 9, 0.55);
+    background-image: url("https://img.icons8.com/material-rounded/24/000000/github.png");
+    background-color: $violet;
     border-radius: 20px;
-
   }
 
 
@@ -155,7 +155,8 @@
   animation-duration: 2.5s;
 
   .icon {
-    background-image: url('/assets/icons/linckedIn/icons8-линкедин.svg');
+    background-image: url('https://img.icons8.com/fluency/28/linkedin.png');
+
   }
 
   top: 25vh;
@@ -171,7 +172,7 @@
   }
 
   .icon {
-    background-image: url('/assets/icons/gmail/icons8-gmail (1).svg');
+    background-image: url('https://img.icons8.com/fluency/48/gmail.png');
   }
 
   top: 36vh;
@@ -204,4 +205,8 @@
   left: 0;
   position: relative;
 
+}
+
+.tooltip {
+  text-transform: uppercase;
 }

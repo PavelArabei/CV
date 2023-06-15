@@ -35,13 +35,15 @@
 }
 
 .me-title {
-  margin-top: 2rem;
+  margin-top: 2.5rem;
   text-align: center;
 }
 
 .sv-button {
+  color: $bgLight;
+  text-decoration: none;
   position: relative;
-  margin-top: 1rem;
+  margin-top: 2.5rem;
   width: 300px;
   height: 50px;
   background-color: transparent;
@@ -78,7 +80,7 @@
 }
 
 .about-me-container {
-  margin-top: 2rem;
+  margin-top: 4.5rem;
   margin-left: 50px;
   width: 80%;
   text-align: start;
@@ -103,6 +105,21 @@
   justify-content: space-between;
 }
 
+@media (max-width: 1200px) {
+  .me-title {
+    margin-top: 1.5rem;
+
+  }
+  .about-me-container {
+    margin-top: 3.5rem;
+  }
+  .sv-button {
+    margin-top: 2rem;
+  }
+
+
+}
+
 
 @media (max-width: 720px) {
   .me-title {
@@ -115,4 +132,8 @@
     margin-left: 15px;
     width: 95%;
   }
+  .sv-button {
+    margin-top: 1rem;
+  }
+
 }

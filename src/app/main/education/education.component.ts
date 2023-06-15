@@ -11,7 +11,7 @@ export class EducationComponent {
     {
       date: 'March, 2023 - June, 2023',
       progress: 'Certificate',
-      progressLink: 'asdasdasdsad',
+      progressLink: 'https://app.rs.school/certificate/25iky07t',
       courseName: 'Angular',
       institution: 'Rolling Scopes School',
       institutionLink: 'https://rs.school/angular/'

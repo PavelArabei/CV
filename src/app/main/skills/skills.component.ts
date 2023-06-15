@@ -7,5 +7,4 @@ import {Component} from '@angular/core';
 })
 export class SkillsComponent {
   public skills: string[] = ['JavaScript', 'TypeScript', 'Angular', 'NgRx, RxJs', 'NestJs', 'Rest API', 'HTML', 'CSS, ScSS', 'Git', 'Webpack', 'Angular Material', 'Tailwind']
-
 }
