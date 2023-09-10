@@ -26,6 +26,7 @@ import {SideNavComponent} from './header/side-nav/side-nav.component';
 import {ExperienceComponent} from './main/experience/experience.component';
 import {CurrentExperienceComponent} from './main/experience/current-experience/current-experience.component';
 import {MatTooltipModule} from "@angular/material/tooltip";
+import { AnimateElementDirective } from './directives/animate-element.directive';
 
 @NgModule({
   declarations: [
@@ -47,7 +48,8 @@ import {MatTooltipModule} from "@angular/material/tooltip";
     LanguageComponent,
     SideNavComponent,
     ExperienceComponent,
-    CurrentExperienceComponent
+    CurrentExperienceComponent,
+    AnimateElementDirective
   ],
   imports: [
     BrowserModule,

@@ -3,10 +3,10 @@
 :host {
   width: 100%;
   border-radius: 5px;
-  background: linear-gradient($violet-15, $colorPrimary-50, $colorPrimary-50), linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)), url("https://oir.mobi/uploads/posts/2021-03/thumbs/1616587100_6-p-programmirovanie-fon-7.jpg");
+  //background: linear-gradient($violet-15, $colorPrimary-50, $colorPrimary-50), linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)), url("https://oir.mobi/uploads/posts/2021-03/thumbs/1616587100_6-p-programmirovanie-fon-7.jpg");
+  background: transparent;
   background-size: cover, cover;
   overflow: hidden;
-  margin-top: 2rem;
 }
 
 

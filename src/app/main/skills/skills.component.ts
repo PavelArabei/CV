@@ -1,10 +1,11 @@
-import {Component} from '@angular/core';
+import { Component } from '@angular/core';
+import { skills } from '../../information/info';
 
 @Component({
   selector: 'app-skills',
   templateUrl: './skills.component.html',
-  styleUrls: ['./skills.component.scss']
+  styleUrls: ['./skills.component.scss'],
 })
 export class SkillsComponent {
-  public skills: string[] = ['JavaScript', 'TypeScript', 'Angular', 'NgRx, RxJs', 'NestJs', 'Rest API', 'HTML', 'CSS, ScSS', 'Git', 'Webpack', 'Angular Material', 'Tailwind']
+  public skills: string[] = skills;
 }

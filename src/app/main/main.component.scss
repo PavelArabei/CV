@@ -5,15 +5,28 @@
   flex-direction: column;
   align-items: center;
   flex: 1;
-  margin-top: $header-margin;
+  margin-top: 110px;
   padding-top: 10px;
   overflow: hidden;
-
+  gap: 6rem;
 }
 
 .ppp {
   width: 100%;
   height: 500px;
   border: 20px solid black;
+}
+
+
+@media (max-width: 1200px) {
+:host{
+  gap: 1rem;
+}
+
+}
+
+
+@media (max-width: 720px) {
+
 }
 

@@ -2,7 +2,7 @@
 @import "variables";
 
 :host {
-  width: 100%;
+  width: 100vw;
   position: fixed;
   top: 0;
   left: 0;
@@ -26,6 +26,7 @@
 }
 
 .header__nav {
+  margin-right: 5%;
   display: flex;
   justify-content: space-between;
   align-items: center;
