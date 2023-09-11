@@ -3,4 +3,7 @@
   <app-nav *ngIf="!isSmall" [isNav]="false"></app-nav>
   <app-menu *ngIf="isSmall" [drawer]="drawer" [isNav]="false"></app-menu>
 </div>
+<div class="up-to-header" (click)="goUp()" *ngIf="isInUpPage && !isSmall">
+<div class="arrow-top"></div>
+</div>
 

@@ -1,18 +1,32 @@
-<app-icon *ngIf="!smallScreen" [smallScreen]="smallScreen" name="git"
+<app-icon *ngIf="!smallScreen"
+          [smallScreen]="smallScreen"
+          name="git"
           [link]="social.gitHub"></app-icon>
-<app-icon *ngIf="!smallScreen" [smallScreen]="smallScreen" name="linked" [link]="social.linkedIn"></app-icon>
-<app-icon iconName="ptashkaaaaaa@gmail.com" *ngIf="!smallScreen" [smallScreen]="smallScreen" name="mail"
+<app-icon *ngIf="!smallScreen"
+          [smallScreen]="smallScreen"
+          name="linked"
+          [link]="social.linkedIn"></app-icon>
+<app-icon iconName="ptashkaaaaaa@gmail.com"
+          *ngIf="!smallScreen"
+          [smallScreen]="smallScreen"
+          name="mail"
           [link]="social.mail"></app-icon>
+
+
 <div class="img-wrapper"><img class="me-img" alt="my-photo" src="./assets/images/me.jpg"></div>
 <p class="fz-24 me-subtitle">Hi, I'm <span class="primary-color">Pavel</span>:)</p>
 <p class="fz-title me-title" id="WEB">Web Developer</p>
-<a href="https://drive.google.com/file/d/1PJOwLt9nIB7r5HwDIVtos4YQtXYypItE/view" download class="sv-button"><span
+<a href="https://drive.google.com/file/d/1LFTO2jY2n1aqUkuXGjlSVV7yYny_Wq2g/view?usp=drive_link" download class="sv-button"><span
   class="fz-text sv-button__text ">Download CV</span></a>
+
+
 <div class="ico-container" *ngIf="smallScreen">
   <app-icon [smallScreen]="smallScreen" name="git" [link]="social.gitHub"></app-icon>
   <app-icon [smallScreen]="smallScreen" name="linked" [link]="social.linkedIn"></app-icon>
   <app-icon [smallScreen]="smallScreen" name="mail" [link]="social.mail"></app-icon>
 </div>
+
+
 <div class="fz-text about-me-container">
   <p class="about-me-text">
     <span class="primary-color"><</span>

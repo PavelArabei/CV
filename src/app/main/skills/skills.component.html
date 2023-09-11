@@ -1,9 +1,11 @@
 <div class="skills-container margin-left fz-text">
-  <p class="fz-text primary-color">Why me</p>
-  <p class="fz-subtitle">Hard skills</p>
-  <div class="grid-skills">
-    <p *ngFor="let skill of skills">
-      <span class="primary-color"><</span> {{skill}} <span class="primary-color">></span>
+  <p appAnimateOnScroll class="fz-text primary-color">Why me</p>
+  <p appAnimateOnScroll class="fz-subtitle">Hard skills</p>
+  <div  class="grid-skills">
+    <p class="grid-item" *ngFor="let skill of skills; let index = index">
+      <span class="primary-color">< </span>
+      <span appAnimateOnScroll>{{ skill }}</span>
+      <span class="primary-color"> ></span>
     </p>
   </div>
 </div>

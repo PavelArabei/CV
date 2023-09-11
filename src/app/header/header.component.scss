@@ -32,3 +32,45 @@
   align-items: center;
   height: $header-margin;
 }
+.up-to-header{
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 50%;
+  border: 3px solid $colorPrimary;
+  bottom: 40px;
+  right: 40px;
+  width: 60px;
+  height: 60px;
+
+  cursor: pointer;
+
+}
+.arrow-top{
+  width: 4px;
+  position: relative;
+  height: 60%;
+  background-color: $colorPrimary;
+  border-radius: 5px;
+}
+
+.arrow-top:before,
+.arrow-top:after{
+  content: '';
+  position: absolute;
+  border-radius: 5px;
+  width: 4px;
+  height: 14px;
+  top: 4px;
+  background-color: $colorPrimary;
+}
+.arrow-top:before{
+  right: 7px;
+  transform: rotate(25deg);
+}
+.arrow-top:after{
+  right: -7px;
+  transform: rotate(-25deg);
+}

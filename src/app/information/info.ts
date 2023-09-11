@@ -1,4 +1,4 @@
-import { Course } from '../main/models/main-models';
+import { Course, Experience } from '../main/models/main-models';
 
 export interface Social {
   gitHub: string;
@@ -63,3 +63,16 @@ export const social: Social = {
   linkedIn: 'https://www.linkedin.com/in/pavel-arabei-a6a77527a/',
   mail: 'mailto:Ptashkaaaaaa@gmail.com',
 };
+
+export const works: Experience[] = [
+  {
+    date: '2022-2023',
+    jobTitle: 'Web Developer',
+    company: 'RSSchool',
+    whatIDo: [
+      'Completed a six-month JavaScript course, where I implemented over 10 projects, including team collaborations.',
+      'Completed a three-month Angular course, creating two applications using NgRx and RxJS, one of which was a team project',
+      'Completed a three-month NodeJS course, creating some applications using nodeJS, nest, typeORM, postgresQL, docker',
+    ],
+  },
+];
