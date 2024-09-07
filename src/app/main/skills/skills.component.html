@@ -1,11 +1,33 @@
 <div class="skills-container margin-left fz-text">
-  <p appAnimateOnScroll class="fz-text primary-color">Why me</p>
-  <p appAnimateOnScroll class="fz-subtitle">Hard skills</p>
-  <div  class="grid-skills">
-    <p class="grid-item" *ngFor="let skill of skills; let index = index">
-      <span class="primary-color">< </span>
-      <span appAnimateOnScroll>{{ skill }}</span>
-      <span class="primary-color"> ></span>
-    </p>
+  <p class="fz-text primary-color">Why me</p>
+  <p class="fz-subtitle">Hard skills</p>
+  <div class="all-skills">
+    <div
+      class="category-skills"
+      *ngFor="
+        let category of skillCategories;
+        let index = index;
+        let last = last
+      "
+    >
+      <div>
+        <p class="primary-color skill-category">
+          {{ allSkills[category].name }}
+        </p>
+        <div class="separator"></div>
+
+        <div class="grid-skills">
+          <p
+            class="grid-item"
+            *ngFor="let skill of allSkills[category].skills; let index = index"
+          >
+            <span class="primary-color">< </span>
+            <span>{{ skill }}</span>
+            <span class="primary-color"> ></span>
+          </p>
+        </div>
+      </div>
+      <div class="separator"></div>
+    </div>
   </div>
 </div>

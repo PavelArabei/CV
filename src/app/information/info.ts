@@ -5,28 +5,70 @@ export interface Social {
   linkedIn: string;
   mail: string;
 }
-export const skills: string[] = [
-  'JavaScript',
-  'TypeScript',
-  'Angular',
-  'NgRx, RxJs',
-  'NodeJS',
-  'NestJs',
-  'TypeORM',
-  'Postgresql',
-  'Docker',
-  'GraphQL',
-  'Rest API',
-  'HTML',
-  'CSS, ScSS',
-  'Tailwind',
-  'Git',
-  'Webpack',
-];
+
+export interface Skills {
+  global: { name: string; skills: string[] };
+  frontend: { name: string; skills: string[] };
+  backend: { name: string; skills: string[] };
+  aws: { name: string; skills: string[] };
+}
+
+export const skills: Skills = {
+  global: {
+    name: 'Global',
+    skills: ['Git', 'Webpack', 'Docker', 'Rest API'],
+  },
+  frontend: {
+    name: 'Frontend',
+    skills: [
+      'TypeScript',
+      'JavaScript',
+      'Angular',
+      'NgRx, RxJs',
+      'HTML',
+      'CSS, ScSS',
+      'Tailwind',
+      'Angular Material',
+    ],
+  },
+  backend: {
+    name: 'Backend',
+    skills: ['NodeJS', 'NestJs', 'TypeORM', 'Postgresql'],
+  },
+  aws: {
+    name: 'AWS',
+    skills: [
+      'S3',
+      'RDS',
+      'API Gateway',
+      'Lambda',
+      'CloudFront',
+      'SNS',
+      'SQS',
+      'DynamoDB',
+    ],
+  },
+};
 
 export const courses: Course[] = [
   {
-    date: 'June, 2023 - September, 2023',
+    date: 'May, 2024 -   August, 2024',
+    progress: 'Certificate',
+    progressLink: 'https://app.rs.school/certificate/ju9j68ja',
+    courseName: 'AWS Cloud Developer',
+    institution: 'Rolling Scopes School',
+    institutionLink: 'https://rs.school/courses/aws-fundamentals/',
+  },
+  {
+    date: 'April, 2024 -  May, 2024',
+    progress: 'Certificate',
+    progressLink: 'https://app.rs.school/certificate/8u4shn5h',
+    courseName: 'AWS Fundamentals',
+    institution: 'Rolling Scopes School',
+    institutionLink: 'https://rs.school/courses/aws-fundamentals/',
+  },
+  {
+    date: 'June, 2023 - Sep, 2023',
     progress: 'Certificate',
     progressLink: 'https://app.rs.school/certificate/fbfy7552',
     courseName: 'NodeJS',
@@ -42,7 +84,7 @@ export const courses: Course[] = [
     institutionLink: 'https://rs.school/angular/',
   },
   {
-    date: 'September, 2022 - March, 2023',
+    date: 'Sep, 2022 - March, 2023',
     progress: 'Certificate',
     progressLink: 'https://app.rs.school/certificate/hk7ej1lf',
     courseName: 'Javascript/Front-End',
@@ -66,13 +108,13 @@ export const social: Social = {
 
 export const works: Experience[] = [
   {
-    date: '2022-2023',
-    jobTitle: 'Web Developer',
+    date: '2022-2024',
+    jobTitle: 'Frontend, Backend, AWS',
     company: 'RSSchool',
     whatIDo: [
-      'Completed a six-month JavaScript course, where I implemented over 10 projects, including team collaborations.',
-      'Completed a three-month Angular course, creating two applications using NgRx and RxJS, one of which was a team project',
-      'Completed a three-month NodeJS course, creating some applications using nodeJS, nest, typeORM, postgresQL, docker',
+      'In spring and summer 2024, I successfully completed the "AWS Fundamentals" and "AWS Cloud Developer" courses, where I mastered AWS technologies such as S3, RDS, API Gateway, Lambda, CloudFront , SNS, SQS, and DynamoDB',
+      'Earlier in 2023, I took the NodeJS course, diving deep into development with Nest and PostgreSQL, Docker, as well as the Angular course, where I explored state management using NgRx and reactive programming with RxJS.',
+      'My learning journey began in 2022 with the "JavaScript/Front-End" course, where I acquired foundational knowledge of web development and programming.',
     ],
   },
 ];

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { skills } from '../../information/info';
+import { Skills, skills } from '../../information/info';
 
 @Component({
   selector: 'app-skills',
@@ -7,5 +7,6 @@ import { skills } from '../../information/info';
   styleUrls: ['./skills.component.scss'],
 })
 export class SkillsComponent {
-  public skills: string[] = skills;
+  public allSkills: Skills = skills;
+  skillCategories = Object.keys(this.allSkills) as (keyof Skills)[];
 }

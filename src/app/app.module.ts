@@ -26,8 +26,8 @@ import { SideNavComponent } from './header/side-nav/side-nav.component';
 import { ExperienceComponent } from './main/experience/experience.component';
 import { CurrentExperienceComponent } from './main/experience/current-experience/current-experience.component';
 import { MatTooltipModule } from '@angular/material/tooltip';
-import { AnimateElementDirective } from './directives/animate-element.directive';
-import { AnimateOnScrollDirective } from './directives/animate-on-scroll.directive';
+// import { AnimateElementDirective } from './directives/animate-element.directive';
+
 import { CommonModule } from '@angular/common';
 
 @NgModule({
@@ -51,8 +51,6 @@ import { CommonModule } from '@angular/common';
     SideNavComponent,
     ExperienceComponent,
     CurrentExperienceComponent,
-    AnimateElementDirective,
-    AnimateOnScrollDirective,
   ],
   imports: [
     BrowserModule,
